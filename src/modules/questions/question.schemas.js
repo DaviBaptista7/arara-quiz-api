@@ -1,10 +1,7 @@
 import { z } from 'zod';
 
-export const createQuestionSchema = z.object({
-answers: z.string().min(1, 'name is required'),
-alternetives: z.number().nonnegative('price must be >= 0')
-question:
-difficulty:  
-score:
-explanation:
+// Este é um Schema para os PARAMS da rota (ex: /questions/by-theme/:themeId)
+export const getQuestionsByThemeSchema = z.object({
+    // Assumimos que a rota recebe o ID do tema
+    themeId: z.string().uuid("Theme ID must be a valid UUID format"),
 });
