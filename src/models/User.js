@@ -1,0 +1,41 @@
+import { DataTypes } from 'sequelize';
+import { database } from '../config/database.js';
+
+export const User = database.define('User', {
+    id: {
+        type: DataTypes.INTEGER,
+        primaryKey: true,
+        autoIncrement: true
+    },
+    name: {
+        type: DataTypes.STRING(100),
+        allowNull: false,
+        validate: {
+            len: {
+                args: [3, 100],
+                msg: 'Nome deve ter entre 3 e 100 caracteres'
+            }
+        }
+    },
+    email: {
+        type: DataTypes.STRING(255),
+        allowNull: false,
+        unique: {
+            msg: 'Email já cadastrado'
+        },
+        validate: {
+            isEmail: {
+                msg: 'Email inválido'
+            }
+        }
+    },
+    passwordHash: {
+        type: DataTypes.STRING(255),
+        allowNull: false,
+        field: 'password_hash' // Nome da coluna no banco (snake_case)
+    },
+}, {
+    tableName: 'users',
+    timestamps: true, // Adiciona createdAt e updatedAt
+    underscored: true // Usa snake_case no banco (created_at)
+});
