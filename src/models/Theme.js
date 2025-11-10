@@ -1,7 +1,7 @@
 import { DataTypes } from 'sequelize';
-import sequelize from '../config/database.js';
+import { database } from '../config/database.js';
 
-export const Theme = sequelize.define('Theme', {
+export const Theme = database.define('Theme', {
     id: {
         type: DataTypes.INTEGER,
         primaryKey: true,

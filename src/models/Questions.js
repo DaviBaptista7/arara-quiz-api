@@ -1,7 +1,7 @@
 import { DataTypes } from 'sequelize';
-import sequelize from '../config/database.js';
+import { database } from '../config/database.js';
 
-export const User = sequelize.define('Question', {
+export const Question = database.define('Question', {
     id: {
         type: DataTypes.INTEGER,
         primaryKey: true,
@@ -14,7 +14,7 @@ export const User = sequelize.define('Question', {
             len: {
                 args: [3, 100],
                 msg: ' deve ter entre 3 e 100 caracteres'
-            } 
+            }
         }
     },
 
@@ -25,12 +25,12 @@ export const User = sequelize.define('Question', {
     },
 
     question: {
-        type: DataTypes.VARCHAR,
+        type: DataTypes.STRING,
         allowNull: false,
     },
 
     difficulty: {
-        type: DataTypes.VARCHAR,
+        type: DataTypes.STRING,
         allowNull: false,
     },
 
@@ -39,11 +39,11 @@ export const User = sequelize.define('Question', {
         allowNull: false,
     },
     explanation: {
-        type: DataTypes.VARCHAR,
+        type: DataTypes.STRING,
         allowNull: false,
     },
 }, {
-    tableName: 'themes',
+    tableName: 'questions',
     timestamps: true, // Adiciona createdAt e updatedAt
     underscored: true // Usa snake_case no banco (created_at)
 });
