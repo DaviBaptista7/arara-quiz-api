@@ -14,6 +14,17 @@ export const User = database.define('User', {
             len: {
                 args: [3, 100],
                 msg: 'Nome deve ter entre 3 e 100 caracteres'
+
+            },
+        }
+    },
+    nickname: {
+        type: DataTypes.STRING(50),
+        allowNull: false,
+        validate: {
+            len: {
+                args: [3, 50],
+                msg: 'Nickname deve ter entre 3 e 50 caracteres'
             }
         }
     },
