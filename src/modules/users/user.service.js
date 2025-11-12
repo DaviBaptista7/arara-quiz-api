@@ -1,0 +1,44 @@
+import bcrypt from "bcryptjs"
+import jwt from "jsonwebtoken"
+
+import { HttpError } from "../../utils/httpError.js"
+import { makeUserRepoSequelize } from "./user.repo.sequelize.js"
+import { env } from "../../config/env.js"
+
+export const makeUserService = () => {
+    const repo = makeUserRepoSequelize()
+
+    const register = async ({ name, email, password, nickname }) => {
+        const exists = await repo.findByEmail(email)
+
+        if (exists) {
+            throw new HttpError("Email already in use", 409, "EMAIL_TAKEN")
+        }
+
+        const passwordHash = await bcrypt.hash(password, 10)
+
+        return repo.create({ name, email, passwordHash, nickname })
+    }
+    const login = async ({ email, password }) => {
+        const user = await repo.findByEmail(email)
+
+        if (!user) {
+            throw new HttpError("User not found", 404, "USER_NOT_FOUND")
+        }
+
+        const ok = await bcrypt.compare(password, user.passwordHash)
+
+        if (!ok) {
+            throw new HttpError("Invalid credentials", 401, "INVALID_CREDENTIALS")
+        }
+
+        const accessToken = jwt.sign({}, env.jwtSecret, {
+            subject: String(user.id),
+            expiresIn: env.jwtExpiresIn
+        })
+
+        return { accessToken }
+    }
+
+    return { register, login }
+}
