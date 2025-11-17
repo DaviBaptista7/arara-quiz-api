@@ -1,0 +1,51 @@
+[
+    {
+        "question": "Quem fundou a cidade de Araraquara?",
+        "difficulty": "easy",
+        "score": "5",
+        "explanation": "",
+        "answers": "",
+        "alternatives": ["0","1","2","3"]
+    },
+    {
+        "question": "Em que ano foi fundado a cidade de Araraquara?",
+        "difficulty": "easy",
+        "score": "",
+        "explanation": "",
+        "answers": "",
+        "alternatives": ["0","1","2","3"]
+    },
+    {
+        "question": "Em que ano a cidade foi elevado à categoria de município?",
+        "difficulty": "medium",
+        "score": "",
+        "explanation": "",
+        "answers": "",
+        "alternatives": ["0","1","2","0"]
+    },
+    {
+        "question": "Qual o significado do nome de Araraquara de origem?",
+        "difficulty": "medium",
+        "score": "",
+        "explanation": "",
+        "answers": "",
+        "alternatives": ["0","1","2","3"]
+    },
+
+    {
+        "question": "Qual a federação brasileira que Araraquara se encontra?",
+        "difficulty": "hard",
+        "score": "",
+        "explanation": "",
+        "answers": "",
+        "alternatives": ["0","1","2","3"]
+    },
+    {
+       "question": "Em que ano foi instalado oficialmentea 1º câmara municipal de Araraquara?",
+        "difficulty": "hard",
+        "score": "",
+        "explanation": "",
+        "answers": "",
+        "alternatives": ["0","1","2","3"]
+    }
+]
