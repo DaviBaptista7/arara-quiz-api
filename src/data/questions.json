@@ -1,51 +1,243 @@
 [
     {
-        "question": "Quem fundou a cidade de Araraquara?",
+        "question": "Quem fundou a cidade?",
         "difficulty": "easy",
-        "score": "5",
-        "explanation": "",
-        "answers": "",
-        "alternatives": ["0","1","2","3"]
+        "score": 10,
+        "explanation": "Pedro José Neto é considerado o fundador de Araraquara.",
+        "answers": 2,
+        "alternatives": ["José de Anchieta","Barão do Pinhal","Pedro José Neto","Antônio Teixeira do Espírito Santo"]
     },
     {
-        "question": "Em que ano foi fundado a cidade de Araraquara?",
+        "question": "Em que ano foi fundado a cidade?",
         "difficulty": "easy",
-        "score": "",
-        "explanation": "",
-        "answers": "",
-        "alternatives": ["0","1","2","3"]
+        "score": 10,
+        "explanation": "A cidade foi fundada em 1817.",
+        "answers": 2,
+        "alternatives": ["1812","1820","1817","1810"]
     },
     {
         "question": "Em que ano a cidade foi elevado à categoria de município?",
         "difficulty": "medium",
-        "score": "",
-        "explanation": "",
-        "answers": "",
-        "alternatives": ["0","1","2","0"]
+        "score": 20,
+        "explanation": "A cidade foi elevada à categoria de município em 1832.",
+        "answers": 3,
+        "alternatives": ["Em 1840","Em 1838","Em 1830","Em 1832"]
     },
     {
-        "question": "Qual o significado do nome de Araraquara de origem?",
+        "question": "Qual o significado do nome de Araraquara em sua origem?",
         "difficulty": "medium",
-        "score": "",
-        "explanation": "",
-        "answers": "",
-        "alternatives": ["0","1","2","3"]
+        "score": 20,
+        "explanation": "O significado do nome Araraquara vem do tupi-guarani Morada do Sol.",
+        "answers": 0,
+        "alternatives": ["Morada do Sol","Morada das Araras","Toca das Araras","Morada da Laranja"]
     },
 
     {
         "question": "Qual a federação brasileira que Araraquara se encontra?",
         "difficulty": "hard",
-        "score": "",
-        "explanation": "",
-        "answers": "",
+        "score": 30,
+        "explanation": "Araraquara se localiza no estado de São Paulo, que é a unidade federativa.",
+        "answers": 3,
+        "alternatives": ["Rio de Janeiro","Espírito Santos","Minas Gerais","São Paulo"]
+    },
+    {
+       "question": "Em que ano foi instalado oficialmente a 1º câmara municipal da cidade?",
+        "difficulty": "hard",
+        "score": 30,
+        "explanation": "A primeira câmara municipal foi instalada oficialmente em 1833.",
+        "answers": 0,
+        "alternatives": ["1833","1836","1830","1834"]
+    },
+    {
+        "question": "Em que ano o time da Ferroviária foi fundado?",
+        "difficulty": "easy",
+        "score" : 10,
+        "explanation": "O time foi fundado em  1950.",
+        "answers" : 2,
+        "alternatives": ["1951","1955","1950","1947"]
+    },
+    {
+        "question": "Qual o apelido dado à Ferroviária?",
+        "difficulty": "easy",
+        "score" : 10,
+        "explanation": "Possuí o apelido de Ferrinha.",
+        "answers" : 1,
+        "alternatives": ["Os Trilheiros do Interior","Ferrinha","Ferrovi","Locomotiva"]
+    },
+    {
+        "question": "Em que ano o estadio Fonte Luminosa foi construido?",
+        "difficulty": "medium",
+        "score" : 20,
+        "explanation": "O estádio foi contruido em 1951.",
+        "answers" : 2,
+        "alternatives": ["1952","1953","1951","1949"]
+    },
+    {
+        "question": "Qual a cor predominante do uniforme da Ferroviária?",
+        "difficulty": "medium",
+        "score" : 20,
+        "explanation": "A cor que mais se predomina em sua bandeira é grená.",
+        "answers" : 3,
+        "alternatives": ["Vermelho","Vinho","Bordô","Grená"]
+    },
+    {
+        "question": "Quem foi o treinador da Ferroviária na campanha do campeonato Brasileiro feminino de 2019?",
+        "difficulty": "hard",
+        "score" : 30,
+        "explanation": "A treinadora que atuou em 2019 foi Tatiele Silveira.",
+        "answers" : 3,
+        "alternatives": ["Emily Lima","Thamires Peixoto","Léo Mendes","Tatiele Silveira"]
+    },
+    {
+        "question": "Qual foi o maior publico ja registrado na Fonte Luminosa?",
+        "difficulty": "hard",
+        "score" : 30,
+        "explanation": "O maior público já registrado no estádio foi de 21.254.",
+        "answers" : 2,
+        "alternatives": ["22.383","23.409","21.254","20.217"]
+    },
+    {
+        "question": "Qual o nome da avenida onde se predomina a maior concentração de árvores Oitis em Araraquara?",
+        "difficulty": "easy",
+        "score" : 10,
+        "explanation": "O nome da avenida dos Oitis se chama Voluntários da Pátria.",
+        "answers" : 1,
+        "alternatives": ["Expedicionários do Brasil","Voluntários da Pátria","São Bento","Bento de Abreu"]
+    },
+    {
+        "question": "Qual o apelido da rua 5 em Araraquara?",
+        "difficulty": "easy",
+        "score" : 10,
+        "explanation": "O seu nome popular é Boulevard dos Oitis.",
+        "answers" : 1,
+        "alternatives": ["Rua dos Passos","Boulevard dos Oitis","Rua da Alegria","Quinta Avenida"]
+    },
+    {
+        "question": "Em que ano foram plantadas as árvores Oitis?",
+        "difficulty": "medium",
+        "score" : 20,
+        "explanation": "As árvores foram plantadas em 1912.",
+        "answers" : 3,
+        "alternatives": ["1910","1911","1915","1912"]
+    },
+    {
+        "question": "Qual era o nome antigo da rua antes da mudança para Voluntários da Pátria?",
+        "difficulty": "medium",
+        "score" : 20,
+        "explanation": "Era mais reconhecido como a 'Rua Alegre'.",
+        "answers" : 1,
+        "alternatives": ["Rua da Alegria","Rua Alegre","Boulevard dos Oitis","Rua dos Passos"]
+    },
+    {
+        "question": "Qual é o principal motivo histórico cuja rua recebeu o nome de Voluntários da Pátria?",
+        "difficulty": "hard",
+        "score" : 30,
+        "explanation": "Em homenagem as jovens que se voluntariaram para lutar na Guerra no Paraguai em 1864",
+        "answers" : 0,
         "alternatives": ["0","1","2","3"]
     },
     {
-       "question": "Em que ano foi instalado oficialmentea 1º câmara municipal de Araraquara?",
+        "question": "Como que as arvores Oitis surgiram em Araraquara?",
         "difficulty": "hard",
-        "score": "",
-        "explanation": "",
-        "answers": "",
+        "score" : 30,
+        "explanation": "As árvores surgiram por meio de um extenso plantio realizado durante a urbanização da cidade",
+        "answers" : "",
+        "alternatives": ["0","1","2","3"]
+    },
+    {
+      "question": "Em que ano foi fundado o Museu Ferroviário?",
+        "difficulty": "easy",
+        "score" : 10,
+        "explanation": "O Museu Ferroviário foi fundado em 1992.",
+        "answers" : 0,
+        "alternatives": ["1992","1995","1990","1993"]
+    },
+{
+      "question": "Qual a origem do museu? ",
+        "difficulty": "easy",
+        "score" : 10,
+        "explanation": "Remonta ao ano de 1990, quando a Associação Brasileira de Preservação Ferroviária (ABPF) obteve a cessão do 1º andar da antiga estação para o projeto, com o objetivo de preservar a história ferroviária da cidade",
+        "answers" : "",
+        "alternatives": ["0","1","2","3"]
+    },
+    {
+      "question": "Qual ano o museu foi reinaugurado?",
+        "difficulty": "medium",
+        "score" : 20,
+        "explanation": "O museu foi reaberto em 2008 após o restauro do prédio da antiga Estação Ferroviária.",
+        "answers" : 2,
+        "alternatives": ["2007","2010","2008","2011"]
+    },
+    {
+      "question": "Qual foi o último ano em que museu Ferroviária funcionava como uma estação ferroviária?",
+        "difficulty": "medium",
+        "score" : 20,
+        "explanation": "Em 2001",
+        "answers" : 1,
+        "alternatives": ["2002","2001","2000","1998"]
+    },
+    {
+      "question": "Qual o horario principal que o museu funciona?",
+        "difficulty": "hard",
+        "score" : 30,
+        "explanation": "O seu horário principal funciona de Seg à sex, das 9h às 17h.",
+        "answers" : 0,
+        "alternatives": ["Seg à sex, das 9h às 17h","Seg à sex, das 7h às 18h","Seg à sex, das 8h às 17h","Seg à sex, das 7h às 19h"]
+    },
+    {
+      "question": "Qual endereço está localizado o museu?",
+        "difficulty": "hard",
+        "score" : 30,
+        "explanation": "O Museu Ferroviário atualmente está localizado na Rua Antônio Prado 611.",
+        "answers" : 1,
+        "alternatives": ["Rua Antônio Prado 620","Rua Antônio Prado 611","Av. Antónia de Camargo de Oliveira","Rua Antônio Prado 811"]
+    },
+     {
+      "question": "Quais dessas lendas está associada a cidade de Araraquara?",
+        "difficulty": "easy",
+        "score" : 10,
+        "explanation": "A lenda que está associada a cidade é a Serpente da igreja da Matriz.",
+        "answers" : 3,
+        "alternatives": ["Curupira","Fantasma do Trevo","Maria Algodão","Serpente da igreja"]
+    },
+    {
+      "question": "Onde ficam as pegadas dos dinossauros?",
+        "difficulty": "easy",
+        "score" : 10,
+        "explanation": "Atualmente estão localizadas na Rua 5 (Voluntários da Pátria).",
+        "answers" : 1,
+        "alternatives": ["Rua 6","Rua 5","Av. José Bônifácio","Av. Espanha"]
+    },
+    {
+      "question": "A lenda da serpente em baixo da igreja Matriz afirma que acorda em quantos anos?",
+        "difficulty": "medium",
+        "score" : 20,
+        "explanation": "A cada 8 anos a serpente disperta-se debaixo da igreja.",
+        "answers" : 0,
+        "alternatives": ["A cada 8 anos","A cada 10 anos","A cada 16 anos","A cada 7 anos"]
+    },
+    {
+      "question": "A estatua do aguia que fica em frente a matriz foi colocada para?",
+        "difficulty": "medium",
+        "score" : 20,
+        "explanation": "Para proteger a igreja do mal da serpente.",
+        "answers" : "",
+        "alternatives": ["0","1","2","3"]
+    },
+    {
+      "question": "Segundo a lenda qual maneira a serpente impediria da igreja ficar concluida?",
+        "difficulty": "hard",
+        "score" : 30,
+        "explanation": "Caso se a igreja for concluida.",
+        "answers" : "",
+        "alternatives": ["0","1","2","3"]
+    },
+    {
+      "question": "A lenda menciona a origem da serpente ligado ao evento tragico em envolvendo uma mulher e seu filho, qual é o evento?",
+        "difficulty": "hard",
+        "score" : 30,
+        "explanation": "Uma mulher teve um filho indesejado e o jogou em um corrego que passava na frente da igreja",
+        "answers" : "",
         "alternatives": ["0","1","2","3"]
     }
 ]
