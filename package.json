@@ -3,7 +3,10 @@
   "type": "module",
   "scripts": {
     "dev": "node --watch src/server.js",
-    "start": "node src/server.js"
+    "start": "node src/server.js",
+    "seed:themes": "npx sequelize-cli db:seed --seed src/database/seeders/20251124225814-add-theme.cjs",
+    "seed:questions": "npx sequelize-cli db:seed --seed src/database/seeders/20251124222817-add-questions.cjs",
+    "seed:all:ordered": "npm run seed:themes && npm run seed:questions"
   },
   "packageManager": "yarn@1.22.22",
   "dependencies": {
@@ -16,6 +19,7 @@
     "jsonwebtoken": "^9.0.2",
     "sequelize": "^6.37.7",
     "sqlite3": "^5.1.7",
+    "uuid": "^13.0.0",
     "zod": "^4.1.12"
   },
   "devDependencies": {
