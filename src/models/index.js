@@ -32,7 +32,7 @@ Theme.hasMany(Question, {
 if (env.nodeEnv === 'development') {
     database.sync({ alter: true })
         .then(() => console.log('✅ Modelos sincronizados'))
-        .catch(err => console.error('❌ Erro ao sincronizar:', err));
+        .catch(err => console.error('❌ Erro ao sincronizar:', err))
 }
 
 export default models

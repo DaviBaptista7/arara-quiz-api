@@ -3,9 +3,11 @@ import { database } from '../config/database.js';
 
 export const Theme = database.define('Theme', {
     id: {
-        type: DataTypes.INTEGER,
+        type: DataTypes.UUID,
+        defaultValue: DataTypes.UUIDV4,
         primaryKey: true,
-        autoIncrement: true
+        allowNull: false,
+        unique: true
     },
     name: {
         type: DataTypes.STRING(100),
