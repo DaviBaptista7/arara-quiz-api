@@ -22,7 +22,7 @@ export const makeUserController = () => {
 
     }
 
-const login = async (request, response, next) => {
+    const login = async (request, response, next) => {
         try {
             const { email, password } = request.body
             const tokens = await service.login({ email, password })

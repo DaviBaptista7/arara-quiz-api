@@ -19,6 +19,7 @@ export const makeUserService = () => {
 
         return repo.create({ name, email, passwordHash, nickname })
     }
+    
     const login = async ({ email, password }) => {
         const user = await repo.findByEmail(email)
 
