@@ -1,11 +1,32 @@
 import { database } from "../config/database.js"
 import { env } from "../config/env.js"
+import { Answer } from "./Answers.js"
 import { Question } from "./Questions.js"
 import { Ranking } from "./Ranking.js"
 import { Theme } from "./Theme.js"
 import { User } from "./User.js"
 
-const models = { Question, Ranking, Theme, User }
+const models = { Answer, Question, Ranking, Theme, User }
+
+User.hasMany(Answer, {
+    foreignKey: 'userId',
+    as: 'answers'
+})
+
+Answer.belongsTo(User, {
+    foreignKey: 'userId',
+    as: 'user'
+})
+
+Question.hasMany(Answer, {
+    foreignKey: 'questionId',
+    as: 'answers'
+})
+
+Answer.belongsTo(Question, {
+    foreignKey: 'questionId',
+    as: 'question'
+})
 
 Ranking.belongsTo(User, {
     foreignKey: "userId",
