@@ -6,6 +6,7 @@ import { env } from './config/env.js';
 import { errorHandler } from './middlewares/errorHandler.js';
 import { authRouter } from './routes/auth.routes.js';
 import { themesRouter } from './routes/themes.routes.js';
+import { questionsRouter } from './routes/questions.routes.js';
 
 export const createApp = () => {
     const app = express();
@@ -22,6 +23,7 @@ export const createApp = () => {
     // 3) Rotas
     app.use("/auth", authRouter())
     app.use("/themes", themesRouter())
+    app.use("/questions", questionsRouter())
 
     // 4) Error handler (sempre por último)
     app.use(errorHandler);
