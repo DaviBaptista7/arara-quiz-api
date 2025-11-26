@@ -11,7 +11,8 @@ export const Question = database.define('Question', {
     unique: true
   },
   correctAnswer: {
-    type: DataTypes.NUMBER(),
+    type: DataTypes.INTEGER(),
+    allowNull: false,
   },
   alternatives: {
     type: DataTypes.JSON,

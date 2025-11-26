@@ -15,5 +15,10 @@ export const makeQuestionsRepoSequelize = () => {
         return questions.map(quest => quest.toJSON())
     }
 
-    return { findByTheme }
+    const findById = async ({ id }) => {
+        const question = await Question.findByPk(id);
+        return question ? question.toJSON() : null;
+    }
+
+    return { findByTheme,findById }
 }
